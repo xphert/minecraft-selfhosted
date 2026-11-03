@@ -30,6 +30,10 @@ allowPorts = [
 EOF
 
 chmod 600 ./frp-server/frps.toml
+ufw allow 7000/tcp
+ufw allow 25565/tcp
+ufw allow 19132/udp
+echo "TOKEN: $TOKEN"
 
 # --- Auto-install Docker Compose if missing ---
 if ! docker compose &>/dev/null; then
@@ -54,3 +58,5 @@ fi
 # --- End auto-install ---
 
 cd ./frp-server && docker compose up -d   
+docker compose ps
+docker compose logs --tail=50 frps
