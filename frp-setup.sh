@@ -1,4 +1,4 @@
-mkdir -p ~/frp-server && cd ~/frp-server
+mkdir -p ./frp-server && cd ./frp-server
 
 TOKEN=$(openssl rand -hex 32)
 
