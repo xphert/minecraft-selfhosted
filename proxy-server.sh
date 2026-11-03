@@ -25,14 +25,18 @@ transport.tls.force = true
 
 allowPorts = [
   { start = 25565, end = 25565 },
-  { start = 19132, end = 19132 }
+  { start = 19132, end = 19132 },
+  { start = 19133, end = 19133 }
 ]
 EOF
 
 chmod 600 ./frp-server/frps.toml
 ufw allow 7000/tcp
 ufw allow 25565/tcp
+ufw allow 19132/tcp
 ufw allow 19132/udp
+ufw allow 19133/tcp
+ufw allow 19133/udp
 echo "TOKEN: $TOKEN"
 
 # --- Auto-install Docker Compose if missing ---
