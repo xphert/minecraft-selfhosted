@@ -62,10 +62,31 @@ remotePort = 25565
 
 [[proxies]]
 name = "minecraft-bedrock"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 19132
+remotePort = 19132
+
+[[proxies]]
+name = "minecraft-bedrock"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 19132
 remotePort = 19132
+
+[[proxies]]
+name = "minecraft-bedrock"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 19133
+remotePort = 19133
+
+[[proxies]]
+name = "minecraft-bedrock"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = 19133
+remotePort = 19133
 EOF
 
 chmod 600 frpc.toml
