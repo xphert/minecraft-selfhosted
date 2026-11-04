@@ -53,6 +53,7 @@ auth.token = "$TOKEN"
 
 transport.tls.enable = true
 
+# Minecraft Java
 [[proxies]]
 name = "minecraft-java"
 type = "tcp"
@@ -60,29 +61,25 @@ localIP = "127.0.0.1"
 localPort = 25565
 remotePort = 25565
 
+# NetherNet signaling
 [[proxies]]
-name = "minecraft-bedrock"
-type = "tcp"
-localIP = "127.0.0.1"
-localPort = 19132
-remotePort = 19132
-
-[[proxies]]
-name = "minecraft-bedrock"
+name = "bedrock-raknet"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 19132
 remotePort = 19132
 
+# NetherNet signaling
 [[proxies]]
-name = "minecraft-bedrock"
+name = "nethernet-signaling"
 type = "tcp"
 localIP = "127.0.0.1"
-localPort = 19133
-remotePort = 19133
+localPort = 19132
+remotePort = 19132
 
+# NetherNet WebRTC gameplay
 [[proxies]]
-name = "minecraft-bedrock"
+name = "nethernet-webrtc"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 19133
