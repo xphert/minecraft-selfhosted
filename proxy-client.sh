@@ -1,4 +1,4 @@
-cd /opt/reality-mc/frp
+cd /data/opt/reality-mc/frp
 
 # --- Auto-install Docker Compose if missing ---
 if ! docker compose &>/dev/null; then
