@@ -1,7 +1,7 @@
-mkdir -p /opt/reality-mc/minecraft
-cd /opt/reality-mc/minecraft
+mkdir -p /data/opt/reality-mc/minecraft
+cd /data/opt/reality-mc/minecraft
 
-cat > /opt/reality-mc/minecraft/docker-compose.yml <<EOF
+cat > /data/opt/reality-mc/minecraft/docker-compose.yml <<EOF
 
 services:
   minecraft:
