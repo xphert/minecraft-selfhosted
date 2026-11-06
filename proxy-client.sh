@@ -63,23 +63,21 @@ remotePort = 25565
 
 # NetherNet signaling
 [[proxies]]
-name = "bedrock-raknet"
-type = "udp"
-localIP = "127.0.0.1"
-localPort = 19132
-remotePort = 19132
-
-# NetherNet signaling
-[[proxies]]
 name = "nethernet-signaling"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 19132
 remotePort = 19132
 
-# NetherNet WebRTC gameplay
+#[[proxies]]
+#name = "nethernet-gameplay-backup"
+#type = "udp"
+#localIP = "127.0.0.1"
+#localPort = 19133
+#remotePort = 19132
+
 [[proxies]]
-name = "nethernet-webrtc"
+name = "nethernet-gameplay"
 type = "udp"
 localIP = "127.0.0.1"
 localPort = 19133
